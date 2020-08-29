@@ -21,7 +21,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-Tm-msZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIm-Tm-msZ">
                                 <rect key="frame" x="0.0" y="75" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -33,7 +33,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="414-td-Iy4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="145"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="151" id="X4J-hO-wjs"/>
                                                     </constraints>
@@ -50,11 +50,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="414-td-Iy4" firstAttribute="top" secondItem="ohG-OG-Cnt" secondAttribute="top" id="5rn-ga-54N"/>
                                                 <constraint firstItem="JMV-MA-7et" firstAttribute="centerX" secondItem="ohG-OG-Cnt" secondAttribute="centerX" id="GUO-MJ-hbI"/>
+                                                <constraint firstItem="414-td-Iy4" firstAttribute="top" secondItem="ohG-OG-Cnt" secondAttribute="top" constant="3" id="I67-ji-A9E"/>
                                                 <constraint firstItem="414-td-Iy4" firstAttribute="leading" secondItem="ohG-OG-Cnt" secondAttribute="leading" id="SGe-A4-dmw"/>
                                                 <constraint firstAttribute="trailing" secondItem="414-td-Iy4" secondAttribute="trailing" id="Voq-gW-Osv"/>
-                                                <constraint firstAttribute="bottom" secondItem="414-td-Iy4" secondAttribute="bottom" id="Yv6-He-UOK"/>
+                                                <constraint firstAttribute="bottom" secondItem="414-td-Iy4" secondAttribute="bottom" constant="3" id="rI6-i9-whQ"/>
                                                 <constraint firstItem="JMV-MA-7et" firstAttribute="centerY" secondItem="ohG-OG-Cnt" secondAttribute="centerY" id="yj7-Ee-isW"/>
                                             </constraints>
                                         </tableViewCellContentView>
