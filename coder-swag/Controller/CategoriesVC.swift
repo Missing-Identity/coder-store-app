@@ -42,5 +42,22 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {//This function is availabe in the UITableViewDelegate.
+        
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)//Sends the data from category constant and passing it to the ProductsVC View Controller. This allows us to pass data to that view to our Products VC when we do the prepareforsegue. **
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {//We are grabbing the destination View Controller and casting it to the appropriate view controller.
+            
+            assert(sender as? Category != nil)//This is only for build time. This basically tells the system that the sender must absolutely be of type category and if it's not then the app won't build. This is to prevent app from crashing as run time.
+            
+            
+            productsVC.initProducts(category: sender as! Category)//We are grabbing productsVC then we are calling the initProducts func in it. Sender is the category which we passed in earlier through sender, see ** in above comments. So here we are grabbing the sender with type category here and force unwrapping it with ! because we know for a fact that it is a catagory.
+            
+        }
+    }
 }
 
