@@ -52,6 +52,10 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productsVC = segue.destination as? ProductsVC {//We are grabbing the destination View Controller and casting it to the appropriate view controller.
             
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn//All this will set the back button text to empty string in the following segue as the segue links to this ViewController.
+            
             assert(sender as? Category != nil)//This is only for build time. This basically tells the system that the sender must absolutely be of type category and if it's not then the app won't build. This is to prevent app from crashing as run time.
             
             

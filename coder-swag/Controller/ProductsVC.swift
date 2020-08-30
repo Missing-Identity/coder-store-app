@@ -26,10 +26,12 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func initProducts(category: Category) {
         
         products = DataService.instance.getProducts(forCategoryTitle: category.title)//We are passing in the title that was passed in from CategoriesVC.
+        navigationItem.title = category.title //This sets the navigation title to whatever product title is present in our service.
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return products.count//This is for single collection view app. If you have multiple collection views then you can keep them in if statements such as "if (section == 1) {} else if (section == 2) {}, etc.
     }
     
