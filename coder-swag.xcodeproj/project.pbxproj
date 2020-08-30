@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		72683AD224FB80E000852C14 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72683AD124FB80E000852C14 /* ProductCell.swift */; };
+		72683AD424FB82BB00852C14 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72683AD324FB82BB00852C14 /* Product.swift */; };
 		7275872424FA14BD0027AE4A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7275872324FA14BD0027AE4A /* Category.swift */; };
 		7275872724FA1D420027AE4A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7275872624FA1D420027AE4A /* DataService.swift */; };
 		72CF5A8E24F7D4EC0073FCB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF5A8D24F7D4EC0073FCB5 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		72683AD124FB80E000852C14 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		72683AD324FB82BB00852C14 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		7275872324FA14BD0027AE4A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7275872624FA1D420027AE4A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		72CF5A8A24F7D4EC0073FCB5 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7275872324FA14BD0027AE4A /* Category.swift */,
+				72683AD324FB82BB00852C14 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72CF5A9224F7D4EC0073FCB5 /* CategoriesVC.swift in Sources */,
+				72683AD424FB82BB00852C14 /* Product.swift in Sources */,
 				7275872424FA14BD0027AE4A /* Category.swift in Sources */,
 				72CF5A8E24F7D4EC0073FCB5 /* AppDelegate.swift in Sources */,
 				7275872724FA1D420027AE4A /* DataService.swift in Sources */,
